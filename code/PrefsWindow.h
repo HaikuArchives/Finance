@@ -8,6 +8,9 @@
 #define PrefsCurrencyChangeMSG	1404
 #define PrefsDateChangeMSG		1405
 
+class BTextControl;
+class BStringView;
+
 class PrefsWindow : public BWindow
 {
 	BHandler* returnHandler;

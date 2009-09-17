@@ -10,6 +10,10 @@
 #include "Prefs.h"
 #include "quadruplet.h"
 
+class BMenuField;
+class BStringView;
+class BTextControl;
+
 class Acc;
 class Pye;
 class Tra;

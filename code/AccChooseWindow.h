@@ -6,6 +6,8 @@
 #define AccChooseOKMSG			901
 #define AccChooseSkipTraMSG		902
 
+class BListView;
+
 class AccChooseWindow : public BWindow
 {
 	sem_id clickWait;

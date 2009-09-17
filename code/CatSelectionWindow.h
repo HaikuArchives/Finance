@@ -3,6 +3,8 @@
 
 #define CatSelectionWindowPopCatMSG 1301
 
+class BPopUpMenu;
+
 class CatSelectionWindow : public StringInputWindow
 {
 	typedef set<Cat*, NameSorted> cas;

@@ -3,6 +3,8 @@
 
 #define OKButtonMSG		601
 
+class BTextControl;
+
 class StringInputWindow : public BWindow
 {
 	bool modal;

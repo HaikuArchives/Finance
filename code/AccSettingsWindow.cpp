@@ -44,7 +44,7 @@ void AccSettingsWindow::MessageReceived(BMessage* msg)
 			acc->openBal = prefs->stringToCurrency(openbaltext);
 
 			#ifdef DEBUG
-			printf("%s %f %li\n", openbaltext.c_str(), val, acc->openBal);
+			printf("%s %li\n", openbaltext.c_str(), acc->openBal);
 			#endif
 			BMessenger msngr(returnHandler);
 			BMessage* msg = new BMessage(AccSetReturnMSG);

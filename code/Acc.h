@@ -8,6 +8,8 @@
 #include "Prefs.h"
 #include "Tra.h"
 
+class BFile;
+
 class Acc
 {
 public:

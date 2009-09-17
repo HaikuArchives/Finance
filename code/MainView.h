@@ -31,6 +31,8 @@ class CatManagerWindow;
 #define ManPyeMSG		512
 #define ManCatMSG		513
 
+class BButton;
+
 struct AccViewSet
 {
 	CheckView* cv;

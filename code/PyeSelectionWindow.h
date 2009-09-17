@@ -4,6 +4,8 @@
 
 #define PyeSelectionWindowPopPyeMSG 1301
 
+class BPopUpMenu;
+
 class PyeSelectionWindow : public StringInputWindow
 {
 	typedef set<Pye*, NameSorted> pas;
