@@ -7,6 +7,8 @@
 
 #include "NameSorted.h"
 
+class BFile;
+
 class Cat : public NameSorted
 {
 protected:

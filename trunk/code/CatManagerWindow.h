@@ -11,6 +11,8 @@
 #define CatManagerWindowDeleteNameMSG	1207
 #define CatManagerWindowRenameNameMSG	1208
 
+class BOutlineListView;
+
 class Proxy;
 
 class CatManagerWindow : public BWindow

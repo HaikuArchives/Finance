@@ -1,0 +1,50 @@
+SubDir TOP code ;
+
+SubDirSysHdrs [ FDirName $(TOP) ] ;
+
+Application Finance :
+	Acc.cpp
+	AccChooseWindow.cpp
+	AccListItem.cpp
+	AccListView.cpp
+	AccSettingsWindow.cpp
+	BeFinancialApp.cpp
+	Cat.cpp
+	CatListItem.cpp
+	CatManagerWindow.cpp
+	CatSelectionWindow.cpp
+	CheckView_A-L.cpp
+	CheckView_M-R.cpp
+	CheckView_S-Z.cpp
+	ColorMaker.cpp
+	LineGraph.cpp
+	ListChooseWindow.cpp
+	MainView.cpp
+	MainWindow.cpp
+	NameSorted.cpp
+	PieGraph.cpp
+	Prefs.cpp
+	PrefsWindow.cpp
+	Proxy.cpp
+	PyeListItem.cpp
+	PyeManagerWindow.cpp
+	PyeSelectionWindow.cpp
+	ReconcileView.cpp
+	RegisterItem.cpp
+	RegisterView.cpp
+	SplCat.cpp
+	SplitWindow.cpp
+	StringInputWindow.cpp
+	SyncUtil.cpp
+	Tra.cpp
+	TraMan.cpp
+	: be tracker translation $(TARGET_LIBSTDC++)
+	: Finance.rdef
+;
+
+#InstallBin $(APPS_DIRECTORY)/Finance : im_server ;
+
+#Package Finance :
+#	Finance :
+#	[ FSplitPath $(APPS_DIRECTORY)/Finance ]
+#;

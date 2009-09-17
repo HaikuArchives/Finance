@@ -10,6 +10,8 @@
 #include "Prefs.h"
 #include "SupportDefs.h"
 
+class BEntry;
+
 class Acc;
 class Cat;
 class MainView;

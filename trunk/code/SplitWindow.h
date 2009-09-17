@@ -10,6 +10,8 @@
 #define AmountModifiedMSG	304
 #define SplitMSG			305
 
+class BRadioButton;
+
 class Proxy;
 class Cat;
 class SplCat;

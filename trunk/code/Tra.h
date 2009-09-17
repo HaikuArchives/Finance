@@ -10,6 +10,8 @@ class Cat;
 class Pye;
 class Acc;
 
+class BFile;
+
 class Tra
 {
 public:

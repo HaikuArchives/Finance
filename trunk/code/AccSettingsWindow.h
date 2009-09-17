@@ -5,6 +5,8 @@
 #define AccSetCancelButtonMSG	1002
 #define AccSetReturnMSG			1003
 
+class BTextControl;
+
 class AccSettingsWindow : public BWindow
 {
 	Acc* acc;
