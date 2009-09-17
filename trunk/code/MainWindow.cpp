@@ -17,7 +17,7 @@
 #include "Version.h"
 
 MainWindow::MainWindow(BRect frame) : BWindow(frame,
-	"BeFinancial", B_DOCUMENT_WINDOW, B_ASYNCHRONOUS_CONTROLS | B_OUTLINE_RESIZE)
+	"Finance", B_DOCUMENT_WINDOW, B_ASYNCHRONOUS_CONTROLS | B_OUTLINE_RESIZE)
 {
 	openfp = 0;
 	savefp = 0;
@@ -319,8 +319,8 @@ void MainWindow::MessageReceived(BMessage* message)
 				if (file.InitCheck() == B_NO_ERROR)
 				{
 					BNodeInfo* node = new BNodeInfo(&file);
-					node->SetType("application/x-vnd.BeFinancial.File");
-					node->SetPreferredApp("application/x-vnd.BeFinancial");
+					node->SetType("application/x-vnd.Finance.File");
+					node->SetPreferredApp("application/x-vnd.Finance");
 					delete node;
 
 					directory.FindEntry(name, &entry);
@@ -511,7 +511,7 @@ bool MainWindow::QuitRequested()
 		return true;
 	if (theProxy->DataExists())
 	{
-		BAlert* alert = new BAlert("Quit BeFinancial", "Save before Quitting?",
+		BAlert* alert = new BAlert("Quit Finance", "Save before Quitting?",
 			"Cancel", "Don't save", "Save", B_WIDTH_AS_USUAL, B_OFFSET_SPACING, B_WARNING_ALERT);
 		uint8 res = alert->Go();
 		if (res == 2)

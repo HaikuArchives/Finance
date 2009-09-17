@@ -7,7 +7,7 @@
 #include "Icons.h"
 #include "MainWindow.h"
 
-BeFinancialApp::BeFinancialApp() : BApplication("application/x-vnd.BeFinancial")
+BeFinancialApp::BeFinancialApp() : BApplication("application/x-vnd.Finance")
 {
 	mw = new MainWindow(BRect(100, 100, 895, 650));
 	mw->Show();
@@ -16,7 +16,7 @@ BeFinancialApp::BeFinancialApp() : BApplication("application/x-vnd.BeFinancial")
 	BBitmap	mini_icon(BRect(0, 0, B_MINI_ICON - 1, B_MINI_ICON - 1), B_COLOR_8_BIT);
 
 	BMimeType mime("BeFinancial File");
-	mime.SetType("application/x-vnd.BeFinancial.File");
+	mime.SetType("application/x-vnd.Finance.File");
 	bool install = !mime.IsInstalled();
 	if (!install)
 	{
@@ -29,11 +29,11 @@ BeFinancialApp::BeFinancialApp() : BApplication("application/x-vnd.BeFinancial")
 		mime.Install();
 		large_icon.SetBits(kLargeBeFinanceFileIcon, large_icon.BitsLength(), 0, B_COLOR_8_BIT);
 		mini_icon.SetBits(kSmallBeFinanceFileIcon, mini_icon.BitsLength(), 0, B_COLOR_8_BIT);
-		mime.SetShortDescription("BeFinancial File");
-		mime.SetLongDescription("Accounts & Transactions from BeFinancial");
+		mime.SetShortDescription("Finance File");
+		mime.SetLongDescription("Accounts and transactions from Finance");
 		mime.SetIcon(&large_icon, B_LARGE_ICON);
 		mime.SetIcon(&mini_icon, B_MINI_ICON);
-		mime.SetPreferredApp("application/x-vnd.BeFinancial");
+		mime.SetPreferredApp("application/x-vnd.Finance");
 		BMessage msg;
 		msg.AddString("extensions", "fin");
 		mime.SetFileExtensions(&msg);
