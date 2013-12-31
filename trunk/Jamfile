@@ -2,5 +2,7 @@ SubDir TOP ;
 
 SubInclude TOP code ;
 
+echo "Gcc ="$(IS_GCC4_PLATFORM) ;
+
 Distro distro ;
 FullDistro fulldistro ;

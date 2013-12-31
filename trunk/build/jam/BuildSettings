@@ -54,7 +54,7 @@ rule SetUpSubDirBuildSettings
 	}
 
 	local gccString = ;
-	if $(IS_GCC4_PLATFORM) {
+	if $(IS_GCC4_PLATFORM) = 1 {
 		gccString += gcc4 ;
 	} else {
 		gccString += gcc2 ;

@@ -37,6 +37,7 @@ mimesetbin=`which_replacement mimeset`
 setversionbin=`which_replacement setversion`
 copyattrbin=`which_replacement copyattr`
 svgicontool=`which_replacement IconTool`
+getarchbin=`which_replacement getarch`
 
 # Check whether jam exists
 echo -n "Checking whether jam exists... "
@@ -125,6 +126,21 @@ if [ -z "$copyattrbin" ]; then
 fi
 echo $copyattrbin
 
+# Check which arch
+echo -n "Checking for architecture..."
+if [ -z "$getarchbin" ]; then
+	echo "gcc2!"
+	isGcc4Platform=0
+else
+	if [ `$getarchbin` = 'x86_gcc2' ]; then
+		echo "gcc2!"
+		isGcc4Platform=0
+	else
+		echo "gcc4!"
+		isGcc4Platform=1
+	fi
+fi
+
 # Create the build configuration
 mkdir -p $current_dir/generated
 cat > $current_dir/generated/BuildConfig << EOF
@@ -135,6 +151,7 @@ MIMESET = ${mimesetbin} ;
 SETVERSION = ${setversionbin} ;
 COPYATTR = ${copyattrbin} ;
 SVGICONTOOL = ${svgicontool} ;
+IS_GCC4_PLATFORM = ${isGcc4Platform} ;
 
 COMMON_DIRECTORY = $(finddir B_COMMON_DIRECTORY) ;
 COMMON_BIN_DIRECTORY = $(finddir B_COMMON_BIN_DIRECTORY) ;
