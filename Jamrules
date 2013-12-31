@@ -40,10 +40,6 @@ HCACHEFILE = header_cache ;
 JCACHEFILE = jamfile_cache ;
 LOCATE on $(HCACHEFILE) $(JCACHEFILE) = $(GENERATED_DIR) ;
 
-# Perform configuration checks
-include [ FDirName $(JAM_DIR) CheckRules ] ;
-CheckGccPlatform ;
-
 # Include jam scripts
 include [ FDirName $(JAM_DIR) HelperRules ] ;
 include [ FDirName $(JAM_DIR) ConfigRules ] ;
