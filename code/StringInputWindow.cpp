@@ -4,8 +4,8 @@
 #include "SyncUtil.h"
 
 StringInputWindow::StringInputWindow(const char* title, BMessage*
-	returnMessage, BHandler* returnHandler, string text = "",
-	bool modal = false) : BWindow(BRect(200, 200, 500, 300), title, 
+	returnMessage, BHandler* returnHandler, string text,
+	bool modal) : BWindow(BRect(200, 200, 500, 300), title, 
 	B_FLOATING_WINDOW_LOOK, B_MODAL_APP_WINDOW_FEEL, 
 	B_ASYNCHRONOUS_CONTROLS | B_NOT_RESIZABLE)
 {

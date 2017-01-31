@@ -1,7 +1,7 @@
 #ifndef ProxyH
 #define ProxyH
 
-#include <fstream.h>
+#include <fstream>
 #include <list>
 #include <map>
 #include <set>

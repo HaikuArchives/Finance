@@ -1,6 +1,8 @@
 #include <stdexcept>
 #include "ColorMaker.h"
 
+using namespace std;
+
 ColorMaker::ColorMaker()
 {
 /*	cblue = ColorFromNumbers(0, 0, 255);

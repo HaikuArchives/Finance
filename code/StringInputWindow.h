@@ -3,6 +3,8 @@
 
 #define OKButtonMSG		601
 
+using namespace std;
+
 class BTextControl;
 
 class StringInputWindow : public BWindow

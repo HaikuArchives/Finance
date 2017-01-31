@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <Button.h>
 #include <TextControl.h>
 #include "Acc.h"

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #include <Button.h>
 #include <MenuField.h>
@@ -13,7 +14,7 @@
 #include "SplCat.h"
 #include "Tra.h"
 
-BMenuItem* CheckView::MakeCatMenu(Cat* cat, bool enabled = true)
+BMenuItem* CheckView::MakeCatMenu(Cat* cat, bool enabled)
 {
 	BMenuItem* mi;
 	BMessage* msgs = new BMessage(CheckPopCatMSG);

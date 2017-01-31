@@ -2,7 +2,7 @@
 #include <File.h>
 #include "Cat.h"
 
-Cat::Cat(string leafname, Cat* par = 0)
+Cat::Cat(string leafname, Cat* par)
 {
 	#ifdef DEBUG
 	printf("Cat::Cat - %p\n", this);
@@ -16,7 +16,7 @@ Cat::Cat(string leafname, Cat* par = 0)
 		par->AddChild(this);
 }
 
-Cat::Cat(BFile* file, cas* catS, Cat* par = 0)
+Cat::Cat(BFile* file, cas* catS, Cat* par)
 {
 	this->par = par;
 	size_t st;

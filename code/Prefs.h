@@ -5,6 +5,8 @@
 #include <string>
 #include <time.h>
 
+using namespace std;
+
 class Prefs
 {
 public:

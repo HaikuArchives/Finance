@@ -12,6 +12,8 @@ class Acc;
 
 class BFile;
 
+using namespace std;
+
 class Tra
 {
 public:

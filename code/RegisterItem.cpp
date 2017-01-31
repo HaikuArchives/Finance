@@ -1,5 +1,6 @@
 #include <ctime>
 #include <stdio.h>
+#include <string.h>
 #include <Region.h>
 #include <View.h>
 #include "Acc.h"
@@ -37,7 +38,7 @@ void RegisterItem::Disable()
 }
 
 void RegisterItem::DrawItem(BView *owner, BRect frame, 
-	bool complete = false)
+	bool complete)
 {
 	if (disabled)
 		return;
