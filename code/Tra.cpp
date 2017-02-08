@@ -1,5 +1,6 @@
 #include <stdexcept>
 #include <stdio.h>
+#include <stdlib.h>
 #include <File.h>
 
 #include "Cat.h"

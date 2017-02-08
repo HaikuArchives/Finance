@@ -19,7 +19,7 @@ void AccListItem::Disable()
 	disabled = true;
 }
 
-void AccListItem::DrawItem(BView *owner, BRect frame, bool complete = false)
+void AccListItem::DrawItem(BView *owner, BRect frame, bool complete)
 {
 	if (disabled)
 		return;

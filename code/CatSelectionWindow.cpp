@@ -24,7 +24,7 @@ CatSelectionWindow::CatSelectionWindow(const char* title,
 	}
 }
 
-BMenuItem* CatSelectionWindow::MakeCatMenu(Cat* cat, bool enabled = true)
+BMenuItem* CatSelectionWindow::MakeCatMenu(Cat* cat, bool enabled)
 {
 	BMenuItem* mi;
 	BMessage* msgs = new BMessage(CatSelectionWindowPopCatMSG);

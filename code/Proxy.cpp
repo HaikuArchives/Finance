@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <stdexcept>
 #include <stdio.h>
+#include <string.h>
 #include <Path.h>
 #include "Acc.h"
 #include "Cat.h"
@@ -19,7 +20,7 @@ void Proxy::AccUpdated(Acc* acc)
 	mv->AccUpdated(acc);
 }
 
-Cat* Proxy::AddCat(string name, bool update = true)
+Cat* Proxy::AddCat(string name, bool update)
 {
 	Cat* cat = tm->AddCat(name);
 	if (update)
@@ -27,7 +28,7 @@ Cat* Proxy::AddCat(string name, bool update = true)
 	return cat;
 }
 
-void Proxy::AddPye(Pye* pye, bool update = true)
+void Proxy::AddPye(Pye* pye, bool update)
 {
 	tm->AddPye(pye);
 	if (update)

@@ -1,5 +1,6 @@
 #include <stdexcept>
 #include <stdio.h>
+#include <string.h>
 #include <Alert.h>
 #include <Button.h>
 #include <Directory.h>
@@ -232,7 +233,7 @@ void MainView::FrameResized(float w, float h)
 	}
 }
 
-Tra* MainView::GetNewTra(Acc* acc, bool alert = true)
+Tra* MainView::GetNewTra(Acc* acc, bool alert)
 {
 	#if DEBUG
 	printf("MainView::GetNewTra\n");

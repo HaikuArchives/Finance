@@ -5,6 +5,8 @@
 #define ListChooseOKMSG			1301
 #define ListChooseCancelMSG		1302
 
+using namespace std;
+
 class ListChooseWindow : public BWindow
 {
 	sem_id clickWait;

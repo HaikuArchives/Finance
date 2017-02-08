@@ -60,7 +60,7 @@ Acc::~Acc()
 	}
 }
 
-void Acc::CalcBal(Tra* startTra = 0)
+void Acc::CalcBal(Tra* startTra)
 {
 	trs::iterator titer;
 	int32 balance;
@@ -88,7 +88,7 @@ void Acc::CalcBal(Tra* startTra = 0)
 	}
 }
 
-void Acc::CalcReconBal(Tra* startTra = 0)
+void Acc::CalcReconBal(Tra* startTra)
 {
 	trs::iterator titer;
 	int32 balance;
@@ -117,7 +117,7 @@ void Acc::CalcReconBal(Tra* startTra = 0)
 	}
 }
 
-void Acc::GrayEveryOther(Tra* startTra = 0)
+void Acc::GrayEveryOther(Tra* startTra)
 {
 #ifdef DEBUG
 	printf("GrayEveryOther - %p\n", startTra);

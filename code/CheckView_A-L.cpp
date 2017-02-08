@@ -126,7 +126,7 @@ CheckView::~CheckView()
 }
 
 void CheckView::AddMenuItemToPopUp(uint32 command, BPopUpMenu* pu,
-	string textstr, bool enabled = true)
+	string textstr, bool enabled)
 {
 	BMessage* msg = new BMessage(command);
 	msg->AddString("text", textstr.c_str());
@@ -242,7 +242,7 @@ SplCat* CheckView::GetSplCat()
 	return theSplCat;
 }
 
-Tra* CheckView::GetTra(Cat* cat, Pye* pye, bool alert = true)
+Tra* CheckView::GetTra(Cat* cat, Pye* pye, bool alert)
 {
 	#if DEBUG
 	printf("CheckView::GetTra\n");

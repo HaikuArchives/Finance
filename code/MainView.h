@@ -5,6 +5,8 @@
 #include <map>
 #include <View.h>
 
+using namespace std;
+
 class AccListView;
 class Proxy;
 class Acc;
